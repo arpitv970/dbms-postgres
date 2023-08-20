@@ -9,6 +9,25 @@ This project is developed soley for learning purpose of mine for exploring `RDBM
 
 # TODO's
 - Create Docker Environment to setup Postgres upon
-    - [ ] Create new Docker Network `dbms-network`
-    - [ ] Pull docker image of `Postgres`
+    - [x] Create new Docker Network `dbms-network`
+    - [x] Pull docker image of `Postgres`
     - [ ] SetUp `PGAdmin` for *GUI* of DB
+
+## Docker commands:
+### For `postgres`:
+```bash
+docker run -d \
+-p 5432:5432 \
+-e POSTGRES_PASSWORD=password \
+--name postgresDB \
+--net dbms-network \
+postgres
+```
+### For `PGAdmin`:
+```bash
+docker run --rm \
+-p 5049:5050 \
+--name pgAdmin \
+--net dbms-network \
+thajeztah/pgadmin3
+```
