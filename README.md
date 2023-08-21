@@ -33,3 +33,4 @@ thajeztah/pgadmin3
 ```
 # References 
 - [Postgres + Docker](https://www.commandprompt.com/education/how-to-create-a-postgresql-database-in-docker/)
+- [Postgres + PGAdmin + Docker](https://dev.to/shree_j/how-to-install-and-run-psql-using-docker-41j2) 
