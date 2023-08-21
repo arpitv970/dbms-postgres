@@ -31,3 +31,5 @@ docker run --rm \
 --net dbms-network \
 thajeztah/pgadmin3
 ```
+# References 
+- [Postgres + Docker](https://www.commandprompt.com/education/how-to-create-a-postgresql-database-in-docker/)
